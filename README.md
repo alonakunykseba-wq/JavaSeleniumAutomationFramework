@@ -1,6 +1,7 @@
 # JavaSeleniumAutomationFramework
 ## 🎯 Project Overview
-This is a professional-grade UI automation framework designed for testing e-commerce web applications. It demonstrates the implementation of a scalable and maintainable automation architecture using the Page Object Model (POM).
+This repository contains a professional‑grade UI automation framework built with Java, Selenium WebDriver, and TestNG.
+It is designed to demonstrate clean automation architecture, scalability, and best practices suitable for enterprise‑level testing — especially in e‑commerce and financial domains.
 
 ## 🛠 Tech Stack
 * **Language:** Java 17+
@@ -11,9 +12,16 @@ This is a professional-grade UI automation framework designed for testing e-comm
 
 ## 🏗 Framework Architecture
 The project follows the **Page Object Model (POM)** to ensure clean separation of test logic from UI elements.
-* **Base Layer:** Handles browser initialization, teardown, and configuration loading.
-* **Page Objects:** Individual classes representing web pages, encapsulating locators and actions.
-* **Tests:** TestNG classes containing assertions and business logic.
+* **Base Layer:** 
+- Browser initialization
+- WebDriver lifecycle management
+- Common setup/teardown logic
+* **Page Objects:**
+- Each page represented by a dedicated class
+- Encapsulated locators and reusable actions
+* **Tests:** 
+- TestNG classes containing assertions and business logic
+- Clean, readable test flow
 
 ## 💻 How to Run
 1. Ensure you have Maven installed.
