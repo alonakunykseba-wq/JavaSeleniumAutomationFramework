@@ -1,1 +1,1 @@
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" > <suite name="UI Automation Suite" verbose="1"> <test name="Learning Tests"> <classes> <class name="learning.XPathPracticeTest"/> </classes> </test> </suite>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" > <suite name="UI Automation Suite" verbose="1"> <test name="Learning Tests"> <classes> <class name="learning.LocatorsPracticeTest"/> </classes> </test> </suite>

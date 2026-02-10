@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f95fc4cd-9243-4185-94be-31f7b8836350" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/learning/XPathPracticeTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/testng.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/learning/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/learning/XPathPracticeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/learning/XPathPracticeTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +59,69 @@
     "kotlin-language-version-configured": "true"
   }
 }]]></component>
+  <component name="RunManager" selected="TestNG.XPathPracticeTest.elementCanBeFoundByCss">
+    <configuration name="XPathPracticeTest.elementCanBeFoundByCss" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="automation-framework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="learning.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="learning" />
+      <option name="MAIN_CLASS_NAME" value="learning.XPathPracticeTest" />
+      <option name="METHOD_NAME" value="elementCanBeFoundByCss" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="XPathPracticeTest.elementCanBeFoundById" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="automation-framework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="learning.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="learning" />
+      <option name="MAIN_CLASS_NAME" value="learning.XPathPracticeTest" />
+      <option name="METHOD_NAME" value="elementCanBeFoundById" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="XPathPracticeTest.elementCanBeFoundByName" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="automation-framework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="learning.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="learning" />
+      <option name="MAIN_CLASS_NAME" value="learning.XPathPracticeTest" />
+      <option name="METHOD_NAME" value="elementCanBeFoundByName" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.XPathPracticeTest.elementCanBeFoundByCss" />
+        <item itemvalue="TestNG.XPathPracticeTest.elementCanBeFoundByName" />
+        <item itemvalue="TestNG.XPathPracticeTest.elementCanBeFoundById" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
