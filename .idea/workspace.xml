@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f95fc4cd-9243-4185-94be-31f7b8836350" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/learning/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/learning/XPathPracticeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/learning/XPathPracticeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/learning/LocatorsPracticeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/learning/LocatorsPracticeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/learning/XPathPracticeTest.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,12 +55,18 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "TestNG.LocatorsPracticeTest.elementCanBeFoundByClass.executor": "Run",
+    "TestNG.LocatorsPracticeTest.elementCanBeFoundByXpath.executor": "Run",
+    "TestNG.LocatorsPracticeTest.executor": "Run",
+    "TestNG.XPathPracticeTest.elementCanBeFoundByCss.executor": "Run",
+    "TestNG.XPathPracticeTest.elementCanBeFoundById.executor": "Run",
+    "TestNG.XPathPracticeTest.elementCanBeFoundByName.executor": "Run",
     "git-widget-placeholder": "SeleniumSelectors",
     "kotlin-language-version-configured": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.XPathPracticeTest.elementCanBeFoundByCss">
-    <configuration name="XPathPracticeTest.elementCanBeFoundByCss" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.LocatorsPracticeTest.elementCanBeFoundByXpath">
+    <configuration name="LocatorsPracticeTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="automation-framework" />
       <extension name="coverage">
         <pattern>
@@ -69,7 +75,42 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="learning" />
-      <option name="MAIN_CLASS_NAME" value="learning.XPathPracticeTest" />
+      <option name="MAIN_CLASS_NAME" value="learning.LocatorsPracticeTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LocatorsPracticeTest.elementCanBeFoundByClass" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="automation-framework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="learning.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="learning" />
+      <option name="MAIN_CLASS_NAME" value="learning.LocatorsPracticeTest" />
+      <option name="METHOD_NAME" value="elementCanBeFoundByClass" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LocatorsPracticeTest.elementCanBeFoundByCss" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="automation-framework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="learning.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="learning" />
+      <option name="MAIN_CLASS_NAME" value="learning.LocatorsPracticeTest" />
       <option name="METHOD_NAME" value="elementCanBeFoundByCss" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -78,7 +119,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="XPathPracticeTest.elementCanBeFoundById" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LocatorsPracticeTest.elementCanBeFoundByName" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="automation-framework" />
       <extension name="coverage">
         <pattern>
@@ -87,8 +128,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="learning" />
-      <option name="MAIN_CLASS_NAME" value="learning.XPathPracticeTest" />
-      <option name="METHOD_NAME" value="elementCanBeFoundById" />
+      <option name="MAIN_CLASS_NAME" value="learning.LocatorsPracticeTest" />
+      <option name="METHOD_NAME" value="elementCanBeFoundByName" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -96,7 +137,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="XPathPracticeTest.elementCanBeFoundByName" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LocatorsPracticeTest.elementCanBeFoundByXpath" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="automation-framework" />
       <extension name="coverage">
         <pattern>
@@ -105,8 +146,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="learning" />
-      <option name="MAIN_CLASS_NAME" value="learning.XPathPracticeTest" />
-      <option name="METHOD_NAME" value="elementCanBeFoundByName" />
+      <option name="MAIN_CLASS_NAME" value="learning.LocatorsPracticeTest" />
+      <option name="METHOD_NAME" value="elementCanBeFoundByXpath" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -116,9 +157,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.XPathPracticeTest.elementCanBeFoundByCss" />
-        <item itemvalue="TestNG.XPathPracticeTest.elementCanBeFoundByName" />
-        <item itemvalue="TestNG.XPathPracticeTest.elementCanBeFoundById" />
+        <item itemvalue="TestNG.LocatorsPracticeTest.elementCanBeFoundByXpath" />
+        <item itemvalue="TestNG.LocatorsPracticeTest.elementCanBeFoundByClass" />
+        <item itemvalue="TestNG.LocatorsPracticeTest" />
+        <item itemvalue="TestNG.LocatorsPracticeTest.elementCanBeFoundByCss" />
+        <item itemvalue="TestNG.LocatorsPracticeTest.elementCanBeFoundByName" />
       </list>
     </recent_temporary>
   </component>

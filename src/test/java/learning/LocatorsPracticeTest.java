@@ -19,4 +19,9 @@ public class LocatorsPracticeTest extends BaseTest{
     public void elementCanBeFoundByCss(){
         driver.findElement(By.cssSelector("#login-button")).click();
     }
+
+    @Test
+    public void elementCanBeFoundByXpath(){
+        driver.findElement(By.xpath("//input[@id='login-button']")).click();
+    }
 }
