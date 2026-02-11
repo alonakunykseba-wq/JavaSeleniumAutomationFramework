@@ -1,4 +1,4 @@
-package learning;
+package learning.seleniumHandsOn;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
@@ -14,7 +14,7 @@ public class BaseTest {
             WebDriverManager.chromedriver().setup();
             driver = new ChromeDriver();
             driver.manage().window().maximize();
-            driver.get("https://www.saucedemo.com");
+            driver.get("https://bonigarcia.dev/selenium-webdriver-java/web-form.html");
         }
 
         @AfterMethod

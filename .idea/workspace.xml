@@ -5,9 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f95fc4cd-9243-4185-94be-31f7b8836350" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/learning/seleniumHandsOn/BaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/learning/seleniumHandsOn/LocatorsPracticeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/learning/swagLabs/LocatorsPracticeTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/learning/LocatorsPracticeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/learning/LocatorsPracticeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/learning/XPathPracticeTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/learning/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/learning/swagLabs/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/learning/LocatorsPracticeTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/testng.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/learning/BaseTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/learning/LocatorsPracticeTest.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,45 +62,44 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "TestNG.LocatorsPracticeTest.checkClassAttributes.executor": "Run",
     "TestNG.LocatorsPracticeTest.elementCanBeFoundByClass.executor": "Run",
+    "TestNG.LocatorsPracticeTest.elementCanBeFoundByCss.executor": "Run",
     "TestNG.LocatorsPracticeTest.elementCanBeFoundByXpath.executor": "Run",
     "TestNG.LocatorsPracticeTest.executor": "Run",
+    "TestNG.LocatorsPracticeTest.findElementByLink (1).executor": "Run",
+    "TestNG.LocatorsPracticeTest.findElementByLink.executor": "Run",
+    "TestNG.LocatorsPracticeTest.findElementsByClassName.executor": "Run",
+    "TestNG.LocatorsPracticeTest.findTitleByClassName.executor": "Run",
+    "TestNG.LocatorsPracticeTest.findTitleByTagName.executor": "Run",
     "TestNG.XPathPracticeTest.elementCanBeFoundByCss.executor": "Run",
     "TestNG.XPathPracticeTest.elementCanBeFoundById.executor": "Run",
     "TestNG.XPathPracticeTest.elementCanBeFoundByName.executor": "Run",
     "git-widget-placeholder": "SeleniumSelectors",
-    "kotlin-language-version-configured": "true"
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/artem/Java_course/JavaSeleniumAutomationFramework/src/test/java/learning/seleniumHandsOn"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.LocatorsPracticeTest.elementCanBeFoundByXpath">
-    <configuration name="LocatorsPracticeTest" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\artem\Java_course\JavaSeleniumAutomationFramework\src\test\java\learning\seleniumHandsOn" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="learning.swagLabs" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.LocatorsPracticeTest.findElementByLink (1)">
+    <configuration name="LocatorsPracticeTest.checkClassAttributes" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="automation-framework" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="learning.*" />
+          <option name="PATTERN" value="learning.swagLabs.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="learning" />
-      <option name="MAIN_CLASS_NAME" value="learning.LocatorsPracticeTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LocatorsPracticeTest.elementCanBeFoundByClass" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="automation-framework" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="learning.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="learning" />
-      <option name="MAIN_CLASS_NAME" value="learning.LocatorsPracticeTest" />
-      <option name="METHOD_NAME" value="elementCanBeFoundByClass" />
+      <option name="MAIN_CLASS_NAME" value="learning.swagLabs.LocatorsPracticeTest" />
+      <option name="METHOD_NAME" value="checkClassAttributes" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -105,12 +111,12 @@
       <module name="automation-framework" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="learning.*" />
+          <option name="PATTERN" value="learning.swagLabs.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="learning" />
-      <option name="MAIN_CLASS_NAME" value="learning.LocatorsPracticeTest" />
+      <option name="MAIN_CLASS_NAME" value="learning.swagLabs.LocatorsPracticeTest" />
       <option name="METHOD_NAME" value="elementCanBeFoundByCss" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -119,17 +125,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LocatorsPracticeTest.elementCanBeFoundByName" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LocatorsPracticeTest.findElementByLink (1)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="automation-framework" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="learning.*" />
+          <option name="PATTERN" value="learning.seleniumHandsOn.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="learning" />
-      <option name="MAIN_CLASS_NAME" value="learning.LocatorsPracticeTest" />
-      <option name="METHOD_NAME" value="elementCanBeFoundByName" />
+      <option name="PACKAGE_NAME" value="learning.seleniumHandsOn" />
+      <option name="MAIN_CLASS_NAME" value="learning.seleniumHandsOn.LocatorsPracticeTest" />
+      <option name="METHOD_NAME" value="findElementByLink" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -137,17 +143,35 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LocatorsPracticeTest.elementCanBeFoundByXpath" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LocatorsPracticeTest.findElementByLink" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="automation-framework" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="learning.*" />
+          <option name="PATTERN" value="learning.swagLabs.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="learning" />
-      <option name="MAIN_CLASS_NAME" value="learning.LocatorsPracticeTest" />
-      <option name="METHOD_NAME" value="elementCanBeFoundByXpath" />
+      <option name="MAIN_CLASS_NAME" value="learning.swagLabs.LocatorsPracticeTest" />
+      <option name="METHOD_NAME" value="findElementByLink" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LocatorsPracticeTest.findTitleByTagName" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="automation-framework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="learning.swagLabs.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="learning" />
+      <option name="MAIN_CLASS_NAME" value="learning.swagLabs.LocatorsPracticeTest" />
+      <option name="METHOD_NAME" value="findTitleByTagName" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -157,11 +181,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.LocatorsPracticeTest.elementCanBeFoundByXpath" />
-        <item itemvalue="TestNG.LocatorsPracticeTest.elementCanBeFoundByClass" />
-        <item itemvalue="TestNG.LocatorsPracticeTest" />
+        <item itemvalue="TestNG.LocatorsPracticeTest.findElementByLink (1)" />
+        <item itemvalue="TestNG.LocatorsPracticeTest.findElementByLink" />
+        <item itemvalue="TestNG.LocatorsPracticeTest.findTitleByTagName" />
         <item itemvalue="TestNG.LocatorsPracticeTest.elementCanBeFoundByCss" />
-        <item itemvalue="TestNG.LocatorsPracticeTest.elementCanBeFoundByName" />
+        <item itemvalue="TestNG.LocatorsPracticeTest.checkClassAttributes" />
       </list>
     </recent_temporary>
   </component>
