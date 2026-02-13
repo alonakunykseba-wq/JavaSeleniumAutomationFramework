@@ -1,14 +1,21 @@
 package learning.swagLabs;
 
+import com.framework.core.BaseTest;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class LocatorsPracticeTest extends BaseTest{
+public class LocatorsPracticeTest extends BaseTest {
+
+    @BeforeMethod(dependsOnMethods = "setup")
+    public void navigate() {
+        driver.get(getProperty("sauce_url"));
+    }
 
     @Test
     public void shouldFindLoginButtonUsingIdAndName(){
