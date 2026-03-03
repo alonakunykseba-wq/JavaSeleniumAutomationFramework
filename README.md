@@ -1,6 +1,6 @@
 # JavaSeleniumAutomationFramework
 
-## 🚀 Project Status:** Active Development (Updated Weekly)
+## 🚀 Project Status: Active Development (Updated Weekly)
 
 ## 🎯 Project Overview
 This repository contains a professional‑grade UI automation framework built with Java, Selenium WebDriver, and TestNG.
