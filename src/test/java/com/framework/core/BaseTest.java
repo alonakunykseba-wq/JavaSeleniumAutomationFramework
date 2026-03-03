@@ -1,5 +1,6 @@
 package com.framework.core;
 
+import framework.pages.swagLabs.LoginPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -13,7 +14,8 @@ import java.util.Properties;
 public class BaseTest {
 
     protected WebDriver driver;
-    protected Properties props; // Class-level variable
+    protected Properties props;
+    protected LoginPage loginPage;
 
     @BeforeMethod
     public void setup() {
@@ -30,6 +32,8 @@ public class BaseTest {
 
         driver = new ChromeDriver();
         driver.manage().window().maximize();
+
+        loginPage = new LoginPage(driver);
     }
 
     public String getProperty(String key) {
