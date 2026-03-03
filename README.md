@@ -1,4 +1,7 @@
 # JavaSeleniumAutomationFramework
+
+##🚀 Project Status: Active Development (Updated Weekly)
+
 ## 🎯 Project Overview
 This repository contains a professional‑grade UI automation framework built with Java, Selenium WebDriver, and TestNG.
 It is designed to demonstrate clean automation architecture, scalability, and best practices suitable for enterprise‑level testing — especially in e‑commerce and financial domains.
@@ -22,6 +25,9 @@ The project follows the **Page Object Model (POM)** to ensure clean separation o
 * **Tests:** 
 - TestNG classes containing assertions and business logic
 - Clean, readable test flow
+- 
+## 📖 Test Strategy
+  For a detailed breakdown of all test scenarios and logic, please see the [Test Plan](TEST_PLAN.md).
 
 ## 💻 How to Run
 1. Ensure you have Maven installed.
