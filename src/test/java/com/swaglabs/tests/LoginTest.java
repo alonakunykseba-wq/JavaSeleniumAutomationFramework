@@ -17,6 +17,7 @@ public class LoginTest extends BaseTest {
     public void shouldLoginWithValidCredentials(){
         String user = getProperty("standard_user");
         String password = getProperty("common_password");
+
         LoginPage loginPage = new LoginPage(driver);
         ProductsPage productPage = loginPage.logInToTheAccount(user, password);
         assertThat(productPage.getPageTitle())

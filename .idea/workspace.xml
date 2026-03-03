@@ -5,22 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f95fc4cd-9243-4185-94be-31f7b8836350" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/framework/pages/swagLabs/BasePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/framework/pages/swagLabs/LoginPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/framework/pages/swagLabs/ProductsPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/framework/core/BaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/swaglabs/tests/LoginTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/config.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEST_PLAN.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/learning/seleniumHandsOn/BaseTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/learning/seleniumHandsOn/LocatorsPracticeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/learning/seleniumHandsOn/LocatorsPracticeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/learning/swagLabs/BaseTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/learning/swagLabs/LocatorsPracticeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/learning/swagLabs/LocatorsPracticeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/testng.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/learning/seleniumHandsOn/BaseTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/learning/seleniumHandsOn/LocatorsPracticeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/learning/seleniumHandsOn/LocatorsPracticeTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/learning/swagLabs/BaseTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/learning/swagLabs/LocatorsPracticeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/learning/swagLabs/LocatorsPracticeTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/swaglabs/tests/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/swaglabs/tests/LoginTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,33 +50,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "TestNG.LocatorsPracticeTest.checkClassAttributes.executor": "Run",
-    "TestNG.LocatorsPracticeTest.elementCanBeFoundByClass.executor": "Run",
-    "TestNG.LocatorsPracticeTest.elementCanBeFoundByCss.executor": "Run",
-    "TestNG.LocatorsPracticeTest.elementCanBeFoundByXpath.executor": "Run",
-    "TestNG.LocatorsPracticeTest.executor": "Run",
-    "TestNG.LocatorsPracticeTest.findElementByLink (1).executor": "Run",
-    "TestNG.LocatorsPracticeTest.findElementByLink.executor": "Run",
-    "TestNG.LocatorsPracticeTest.findElementsByClassName.executor": "Run",
-    "TestNG.LocatorsPracticeTest.findTitleByClassName.executor": "Run",
-    "TestNG.LocatorsPracticeTest.findTitleByTagName.executor": "Run",
-    "TestNG.LocatorsPracticeTest.shouldFindLoginButtonUsingIdAndName.executor": "Run",
-    "TestNG.LoginTest.executor": "Run",
-    "TestNG.LoginTest.shouldLoginWithValidCredentials.executor": "Debug",
-    "TestNG.XPathPracticeTest.elementCanBeFoundByCss.executor": "Run",
-    "TestNG.XPathPracticeTest.elementCanBeFoundById.executor": "Run",
-    "TestNG.XPathPracticeTest.elementCanBeFoundByName.executor": "Run",
-    "git-widget-placeholder": "#1 on SeleniumSelectors",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/artem/Java_course/JavaSeleniumAutomationFramework/src/test/java/learning/seleniumHandsOn"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;TestNG.LocatorsPracticeTest.checkClassAttributes.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LocatorsPracticeTest.elementCanBeFoundByClass.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LocatorsPracticeTest.elementCanBeFoundByCss.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LocatorsPracticeTest.elementCanBeFoundByXpath.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LocatorsPracticeTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LocatorsPracticeTest.findElementByLink (1).executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LocatorsPracticeTest.findElementByLink.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LocatorsPracticeTest.findElementsByClassName.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LocatorsPracticeTest.findTitleByClassName.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LocatorsPracticeTest.findTitleByTagName.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LocatorsPracticeTest.shouldFindLoginButtonUsingIdAndName.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LoginTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LoginTest.shouldLoginWithValidCredentials.executor&quot;: &quot;Debug&quot;,
+    &quot;TestNG.XPathPracticeTest.elementCanBeFoundByCss.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.XPathPracticeTest.elementCanBeFoundById.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.XPathPracticeTest.elementCanBeFoundByName.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/artem/Java_course/JavaSeleniumAutomationFramework/src/test/java/learning/seleniumHandsOn&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\artem\Java_course\JavaSeleniumAutomationFramework\src\test\java\learning\seleniumHandsOn" />
@@ -192,7 +180,6 @@
         <item itemvalue="TestNG.LoginTest" />
         <item itemvalue="TestNG.LoginTest.shouldLoginWithValidCredentials" />
         <item itemvalue="TestNG.LocatorsPracticeTest.shouldFindLoginButtonUsingIdAndName" />
-        <item itemvalue="TestNG.LocatorsPracticeTest.findElementByLink (1)" />
         <item itemvalue="TestNG.LocatorsPracticeTest.findElementByLink" />
       </list>
     </recent_temporary>
@@ -200,7 +187,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.30387.90" />
+        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.31033.145" />
       </set>
     </attachedChunks>
   </component>
@@ -234,7 +221,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/swaglabs/tests/LoginTest.java</url>
-          <line>20</line>
+          <line>21</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
