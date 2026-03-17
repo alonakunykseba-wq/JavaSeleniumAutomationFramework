@@ -16,7 +16,19 @@ public class LoginTest extends SwagLabsBase {
     public void shouldLoginWithValidCredentials(){
         loginAsStandardUser();
         assertThat(getProductsPage().getPageTitle())
-                .withFailMessage("page title is not as expected")
+                .withFailMessage("Page title is not as expected")
                 .isEqualTo("Products");
+    }
+
+    @Test
+    public void shouldNotLoginWithInvalidCredentials(){
+        driver.get(getProperty("sauce_url"));
+        productsPage = loginPage.logInToTheAccount(
+                getProperty("locked_out_user"),
+                getProperty("common_password")
+        );
+        assertThat(loginPage.getErrorText())
+                .withFailMessage("Error text is not as expected")
+                .isEqualTo("Epic sadface: Sorry, this user has been locked out.");
     }
 }

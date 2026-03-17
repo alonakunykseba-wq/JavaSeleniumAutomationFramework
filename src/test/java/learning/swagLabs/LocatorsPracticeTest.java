@@ -1,8 +1,11 @@
 package learning.swagLabs;
 
-import com.framework.core.BaseTest;
+import com.swaglabs.base.SwagLabsBase;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import static org.openqa.selenium.support.locators.RelativeLocator.with;
+
+import org.openqa.selenium.support.locators.RelativeLocator;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -10,7 +13,7 @@ import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class LocatorsPracticeTest extends BaseTest {
+public class LocatorsPracticeTest extends SwagLabsBase {
 
     @BeforeMethod(dependsOnMethods = "setup")
     public void navigate() {
@@ -61,4 +64,11 @@ public class LocatorsPracticeTest extends BaseTest {
         assertThat(formGroupClasses.get(0).getAttribute("placeholder")).isEqualTo("Username");
     }
 
+    @Test
+    public void shouldFindLoginButtonUsingRelativeLocators(){
+        WebElement button= driver.findElement(By.cssSelector("[type=submit]"));
+        RelativeLocator.RelativeBy password_field = RelativeLocator.with(By.tagName("input"));
+        WebElement password = driver.findElement(password_field.above(button));
+        assertThat(password.getAttribute("type")).isEqualTo("password");
+    }
 }

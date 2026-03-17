@@ -15,4 +15,9 @@ public class LoginPage extends BasePage{
         driver.findElement(By.cssSelector("#login-button")).click();
         return new ProductsPage(driver);
     }
+
+    public String getErrorText(){
+        return driver.findElement(By.cssSelector("[data-test=\"error\"]")).getText();
+    }
+
 }

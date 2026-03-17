@@ -19,8 +19,5 @@ public class LocatorsPracticeTest extends BaseTest {
         assertThat(title).isEqualTo("Hands-On Selenium WebDriver with Java");
     }
 
-    @Test
-    public void shouldSelectDateUsingRelativeLocators(){
 
-    }
 }
