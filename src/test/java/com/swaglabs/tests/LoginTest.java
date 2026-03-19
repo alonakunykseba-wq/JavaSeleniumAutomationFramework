@@ -7,10 +7,6 @@ import org.testng.annotations.Test;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class LoginTest extends SwagLabsBase {
-    @BeforeMethod(dependsOnMethods = "setup")
-    public void navigate() {
-        driver.get(getProperty("sauce_url"));
-    }
 
     @Test
     public void shouldLoginWithValidCredentials(){
@@ -21,8 +17,7 @@ public class LoginTest extends SwagLabsBase {
     }
 
     @Test
-    public void shouldNotLoginWithInvalidCredentials(){
-        driver.get(getProperty("sauce_url"));
+    public void shouldNotLoginWithLockedUser(){
         productsPage = loginPage.logInToTheAccount(
                 getProperty("locked_out_user"),
                 getProperty("common_password")
@@ -30,5 +25,16 @@ public class LoginTest extends SwagLabsBase {
         assertThat(loginPage.getErrorText())
                 .withFailMessage("Error text is not as expected")
                 .isEqualTo("Epic sadface: Sorry, this user has been locked out.");
+    }
+
+    @Test
+    public void shouldNotLoginWithInvalidCredentials(){
+        productsPage = loginPage.logInToTheAccount(
+                getProperty("not_existing_user"),
+                getProperty("common_password")
+        );
+        assertThat(loginPage.getErrorText())
+                .withFailMessage("Error text is not as expected")
+                .isEqualTo("Epic sadface: Username and password do not match any user in this service");
     }
 }
