@@ -15,11 +15,6 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 public class LocatorsPracticeTest extends SwagLabsBase {
 
-    @BeforeMethod(dependsOnMethods = "setup")
-    public void navigate() {
-        driver.get(getProperty("sauce_url"));
-    }
-
     @Test
     public void shouldFindLoginButtonUsingIdAndName(){
         driver.findElement(By.id("login-button")).click();
