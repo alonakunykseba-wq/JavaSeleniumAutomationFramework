@@ -3,21 +3,26 @@ package framework.pages.swagLabs;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class LoginPage extends BasePage{
+public class LoginPage extends BasePage {
 
     public LoginPage(WebDriver driver) {
         super(driver);
     }
 
-    public ProductsPage logInToTheAccount(String username, String password){
-        driver.findElement(By.cssSelector("[placeholder=Username]")).sendKeys(username);
-        driver.findElement(By.cssSelector("[placeholder=Password]")).sendKeys(password);
-        driver.findElement(By.cssSelector("#login-button")).click();
+    private final By usernameField = By.cssSelector("[placeholder=Username]");
+    private final By passwordField = By.cssSelector("[placeholder=Password]");
+    private final By loginButton = By.cssSelector("#login-button");
+    private final By errorMessage = By.cssSelector("[data-test=\"error\"]");
+
+    public ProductsPage logInToTheAccount(String username, String password) {
+        enterText(usernameField, username);
+        enterText(passwordField, password);
+        click(loginButton);
         return new ProductsPage(driver);
     }
 
-    public String getErrorText(){
-        return driver.findElement(By.cssSelector("[data-test=\"error\"]")).getText();
+    public String getErrorText() {
+        return getText(errorMessage);
     }
 
 }

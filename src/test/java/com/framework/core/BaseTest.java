@@ -1,6 +1,7 @@
 package com.framework.core;
 
 import framework.pages.swagLabs.LoginPage;
+import framework.utils.ConfigurationManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -14,17 +15,11 @@ import java.util.Properties;
 public class BaseTest {
 
     protected WebDriver driver;
-    protected Properties props;
     protected LoginPage loginPage;
 
     @BeforeMethod
     public void setup() {
-        props = new Properties();
-        try (FileInputStream fis = new FileInputStream("src/test/resources/config.properties")) {
-            props.load(fis);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+
         ChromeOptions options = new ChromeOptions();
         // Disables the password manager and leak detection popups
         options.addArguments("--disable-features=PasswordLeakDetection");
@@ -37,7 +32,7 @@ public class BaseTest {
     }
 
     public String getProperty(String key) {
-        return props.getProperty(key);
+        return ConfigurationManager.getProperty(key);
     }
 
     @AfterMethod

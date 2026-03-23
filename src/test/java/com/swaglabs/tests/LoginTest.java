@@ -1,15 +1,15 @@
 package com.swaglabs.tests;
 import com.swaglabs.base.SwagLabsBase;
 
-import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class LoginTest extends SwagLabsBase {
 
-    @Test
-    public void shouldLoginWithValidCredentials(){
+    @Test(description = "TC-01: verifySuccessfulLoginRedirectsToInventory")
+    public void verifySuccessfulLoginRedirectsToInventory(){
         loginAsStandardUser();
         assertThat(getProductsPage().getPageTitle())
                 .withFailMessage("Page title is not as expected")
@@ -17,24 +17,14 @@ public class LoginTest extends SwagLabsBase {
     }
 
     @Test
-    public void shouldNotLoginWithLockedUser(){
+    @Parameters({"login", "password", "expectedErrorMessage"})
+    public void verifyErrorMessageWhenLoginIsNotSuccessful(String login, String password, String expectedErrorMessage) {
         productsPage = loginPage.logInToTheAccount(
-                getProperty("locked_out_user"),
-                getProperty("common_password")
+                getProperty(login),
+                getProperty(password)
         );
         assertThat(loginPage.getErrorText())
                 .withFailMessage("Error text is not as expected")
-                .isEqualTo("Epic sadface: Sorry, this user has been locked out.");
-    }
-
-    @Test
-    public void shouldNotLoginWithInvalidCredentials(){
-        productsPage = loginPage.logInToTheAccount(
-                getProperty("not_existing_user"),
-                getProperty("common_password")
-        );
-        assertThat(loginPage.getErrorText())
-                .withFailMessage("Error text is not as expected")
-                .isEqualTo("Epic sadface: Username and password do not match any user in this service");
+                .isEqualTo(expectedErrorMessage);
     }
 }
