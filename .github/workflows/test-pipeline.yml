@@ -25,4 +25,4 @@ jobs:
         if: always()
         with:
           name: allure-results
-          path: target/allure-results
+          path: allure-results
