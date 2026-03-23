@@ -4,23 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f95fc4cd-9243-4185-94be-31f7b8836350" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEST_PLAN.md" beforeDir="false" afterPath="$PROJECT_DIR$/TEST_PLAN.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/framework/pages/swagLabs/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/framework/pages/swagLabs/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/framework/pages/swagLabs/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/framework/pages/swagLabs/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/framework/pages/swagLabs/ProductsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/framework/pages/swagLabs/ProductsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/framework/core/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/framework/core/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/swaglabs/tests/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/swaglabs/tests/LoginTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/framework/pages/swagLabs/BasePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/framework/pages/swagLabs/BasePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/framework/pages/swagLabs/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/framework/pages/swagLabs/LoginPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/framework/pages/swagLabs/ProductsPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/framework/pages/swagLabs/ProductsPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/swaglabs/base/SwagLabsBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/swaglabs/base/SwagLabsBase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/swaglabs/tests/LoginTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/swaglabs/tests/LoginTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/learning/swagLabs/LocatorsPracticeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/learning/swagLabs/LocatorsPracticeTest.class" afterDir="false" />
-    </list>
+    <list default="true" id="f95fc4cd-9243-4185-94be-31f7b8836350" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
