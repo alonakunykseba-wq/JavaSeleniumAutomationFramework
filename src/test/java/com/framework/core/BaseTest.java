@@ -22,11 +22,13 @@ public class BaseTest {
 
         ChromeOptions options = new ChromeOptions();
         // Disables the password manager and leak detection popups
+        options.addArguments("--no-sandbox");
+        options.addArguments("--disable-dev-shm-usage");
         options.addArguments("--disable-features=PasswordLeakDetection");
         options.addArguments("--disable-features=PasswordManagerOnboarding");
         options.addArguments("--headless=new");
         options.addArguments("--window-size=1920,1080");
-        driver = new ChromeDriver();
+        driver = new ChromeDriver(options);
         driver.manage().window().maximize();
 
         loginPage = new LoginPage(driver);
