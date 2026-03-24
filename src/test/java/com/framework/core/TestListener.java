@@ -19,9 +19,9 @@ public class TestListener implements ITestListener {
     @Override
     public void onTestFailure(ITestResult result) {
 
-        System.out.println("Test Failed: " + result.getName() + " - Taking screenshot!");
+        System.err.println("Test Failed: " + result.getName() + " - Taking screenshot!");
 
-        System.out.println("REASON FOR FAILURE: " + result.getThrowable().getMessage());
+        System.err.println("REASON FOR FAILURE: " + result.getThrowable().getMessage());
         Object testClass = result.getInstance();
         WebDriver driver = ((BaseTest) testClass).getDriver();
         if (driver != null) {
