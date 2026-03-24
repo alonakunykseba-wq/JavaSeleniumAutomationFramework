@@ -19,7 +19,7 @@ public class LoginTest extends SwagLabsBase {
     @Test
     @Parameters({"login", "password", "expectedErrorMessage"})
     public void verifyErrorMessageWhenLoginIsNotSuccessful(String login, String password, String expectedErrorMessage) {
-        productsPage = loginPage.logInToTheAccount(
+        loginPage.logInToTheAccount(
                 getProperty(login),
                 getProperty(password)
         );
