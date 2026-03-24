@@ -1,4 +1,7 @@
 <suite name="Login Feature Suite">
+    <listeners>
+        <listener class-name="com.framework.core.TestListener" />
+    </listeners>
         <test name="TC-01: verifySuccessfulLoginRedirectsToInventory">
             <classes>
                 <class name="com.swaglabs.tests.LoginTest">
