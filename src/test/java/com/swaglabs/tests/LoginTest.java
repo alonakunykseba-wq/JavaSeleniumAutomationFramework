@@ -13,7 +13,7 @@ public class LoginTest extends SwagLabsBase {
         loginAsStandardUser();
         assertThat(getProductsPage().getPageTitle())
                 .withFailMessage("Page title is not as expected")
-                .isEqualTo("Products");
+                .isEqualTo("Products35");
     }
 
     @Test
