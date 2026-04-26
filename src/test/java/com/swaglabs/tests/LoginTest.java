@@ -8,7 +8,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 public class LoginTest extends SwagLabsBase {
 
-    @Test(description = "TC-01: verifySuccessfulLoginRedirectsToInventory")
+    @Test
     public void verifySuccessfulLoginRedirectsToInventory(){
         loginAsStandardUser();
         assertThat(getProductsPage().getPageTitle())
