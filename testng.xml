@@ -59,5 +59,14 @@
             </class>
         </classes>
     </test>
+    <test name="TC-06: verifyHighToLowPriceSortingLogic">
+        <classes>
+            <class name="com.swaglabs.tests.CatalogTest">
+                <methods>
+                    <include name="verifyHighToLowPriceSortingLogic"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
 </suite>
 

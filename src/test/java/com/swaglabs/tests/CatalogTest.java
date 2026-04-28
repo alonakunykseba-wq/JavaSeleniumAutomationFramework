@@ -5,7 +5,7 @@ import org.assertj.core.api.SoftAssertions;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -39,5 +39,17 @@ public class CatalogTest extends SwagLabsBase {
                 .withFailMessage("Product price currency is not USD")
                 .allMatch(price -> price.startsWith("$"));
         softly.assertAll();
+    }
+
+    @Test (description ="TC-06: verifyHighToLowPriceSortingLogic")
+    public void verifyHighToLowPriceSortingLogic(){
+        productsPage.applySortingFilter("Price (high to low)");
+        List<String> productPriceList = productsPage.getProductPrice();
+        List<Double> sortedPriceList = productPriceList.stream()
+                .map(price->Double.parseDouble(price.replace("$", "") ))
+                .toList();
+        assertThat(sortedPriceList)
+                .withFailMessage("The prices are not sorted in descending order")
+                .isSortedAccordingTo(Comparator.reverseOrder());
     }
 }

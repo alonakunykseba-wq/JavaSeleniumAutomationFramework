@@ -36,7 +36,6 @@ public class BasePage {
     protected ArrayList<String> getTexts(By locator) {
         ArrayList<String> textList = new ArrayList<>();
 
-        // Wait for ALL elements in the list to be visible!
         List<WebElement> elements = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(locator));
 
         for (WebElement el : elements) {
