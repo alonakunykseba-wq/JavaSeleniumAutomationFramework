@@ -36,7 +36,7 @@ public class ProductsOverviewPage extends BasePage {
     }
 
     public ProductDetailsPage clickRandomProductLink(String randomProduct){
-        String randomProductSelector = String.format("//div[@data-test='inventory-item-name' and text()='%s']", randomProduct);;
+        String randomProductSelector = String.format("//div[@data-test='inventory-item-name' and text()='%s']", randomProduct);
         click(By.xpath(randomProductSelector));
         return new ProductDetailsPage(driver);
     }
