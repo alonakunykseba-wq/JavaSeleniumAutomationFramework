@@ -2,6 +2,7 @@ package com.swaglabs.tests;
 
 import com.swaglabs.base.SwagLabsBase;
 import framework.pages.swagLabs.ProductDetailsPage;
+import io.qameta.allure.Description;
 import org.assertj.core.api.SoftAssertions;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -23,6 +24,11 @@ public class CatalogTest extends SwagLabsBase {
     }
 
     @Test(description = "TC-05: verifyProductCatalogCountAndBrandingConsistency")
+    @Description("""
+            Verifies the integrity of the product catalog by ensuring that exactly 6 products are loaded on the page, 
+            all product names strictly contain the 'Sauce Labs' branding,
+            and all product prices are correctly formatted with the USD ($) currency symbol.
+            """)
     public void verifyProductCatalogCountAndBrandingConsistency() {
 
         List<String> productNamesList = productsOverviewPage.getProductNames();
@@ -43,6 +49,10 @@ public class CatalogTest extends SwagLabsBase {
     }
 
     @Test (description ="TC-06: verifyHighToLowPriceSortingLogic")
+    @Description("""
+            Validates the catalog sorting mechanism by applying the 'Price (high to low)' filter and 
+            verifying that all product prices on the page are mathematically rearranged in strictly descending order.
+            """)
     public void verifyHighToLowPriceSortingLogic(){
         productsOverviewPage.applySortingFilter("Price (high to low)");
         List<String> productPriceList = productsOverviewPage.getProductPrices();
@@ -55,6 +65,11 @@ public class CatalogTest extends SwagLabsBase {
     }
 
     @Test (description = "TC-12: verifyProductDetailsMatchCatalogInformation")
+    @Description("""
+            Verifies data synchronization between the high-level catalog and individual item pages.
+            Ensures that when a specific product is clicked,
+            the resulting Product Details page displays the exact same product name and price as the catalog cache.
+            """)
     public void verifyProductDetailsMatchCatalogInformation(){
         String expectedName = productsOverviewPage.selectRandomProductName();
         double expectedPrice = productsOverviewPage.getProductPriceByName(expectedName);
