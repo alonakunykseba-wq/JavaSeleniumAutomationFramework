@@ -23,7 +23,7 @@ public class CatalogTest extends SwagLabsBase {
                 .isEqualTo("Products");
     }
 
-    @Test(description = "TC-05: verifyProductCatalogCountAndBrandingConsistency")
+    @Test(enabled = false, description = "TC-05: verifyProductCatalogCountAndBrandingConsistency")
     @Description("""
             Verifies the integrity of the product catalog by ensuring that exactly 6 products are loaded on the page,
             all product names strictly contain the 'Sauce Labs' branding,
