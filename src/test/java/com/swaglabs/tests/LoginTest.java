@@ -25,7 +25,7 @@ public class LoginTest extends SwagLabsBase {
     @Description("""
             Data-driven negative test suite.
             Verifies that the system securely intercepts invalid login attempts
-            (including locked-out accounts, bad credentials, and empty fields) 
+            (including locked-out accounts, bad credentials, and empty fields)
             and correctly displays the expected error message without granting system access.
             """)
     @Parameters({ "login", "password", "expectedErrorMessage"})
