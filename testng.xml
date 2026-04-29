@@ -68,5 +68,14 @@
             </class>
         </classes>
     </test>
+    <test name="TC-12: verifyProductDetailsMatchCatalogInformation">
+        <classes>
+            <class name="com.swaglabs.tests.CatalogTest">
+                <methods>
+                    <include name="verifyProductDetailsMatchCatalogInformation"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
 </suite>
 

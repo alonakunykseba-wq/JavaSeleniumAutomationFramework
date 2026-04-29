@@ -31,7 +31,6 @@ public class DriverFactory {
                 options.setExperimentalOption("prefs", prefs);
                 // 2. Incognito mode blocks all popups
                 options.addArguments("--incognito");
-                //for GitHub Actions Pipeline!
                 options.addArguments("--no-sandbox");
                 options.addArguments("--disable-dev-shm-usage");
                 options.addArguments("--headless=new");

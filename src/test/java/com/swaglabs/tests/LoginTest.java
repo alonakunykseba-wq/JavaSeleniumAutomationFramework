@@ -11,7 +11,7 @@ public class LoginTest extends SwagLabsBase {
     @Test
     public void verifySuccessfulLoginRedirectsToInventory(){
         loginAsStandardUser();
-        assertThat(getProductsPage().getPageTitle())
+        assertThat(getProductsOverviewPage().getPageTitle())
                 .withFailMessage("Page title is not as expected")
                 .isEqualTo("Products");
     }
