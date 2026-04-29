@@ -25,7 +25,7 @@ public class CatalogTest extends SwagLabsBase {
 
     @Test(description = "TC-05: verifyProductCatalogCountAndBrandingConsistency")
     @Description("""
-            Verifies the integrity of the product catalog by ensuring that exactly 6 products are loaded on the page, 
+            Verifies the integrity of the product catalog by ensuring that exactly 6 products are loaded on the page,
             all product names strictly contain the 'Sauce Labs' branding,
             and all product prices are correctly formatted with the USD ($) currency symbol.
             """)
@@ -50,7 +50,7 @@ public class CatalogTest extends SwagLabsBase {
 
     @Test (description ="TC-06: verifyHighToLowPriceSortingLogic")
     @Description("""
-            Validates the catalog sorting mechanism by applying the 'Price (high to low)' filter and 
+            Validates the catalog sorting mechanism by applying the 'Price (high to low)' filter and
             verifying that all product prices on the page are mathematically rearranged in strictly descending order.
             """)
     public void verifyHighToLowPriceSortingLogic(){

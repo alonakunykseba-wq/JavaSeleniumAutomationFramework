@@ -11,7 +11,7 @@ public class LoginTest extends SwagLabsBase {
 
     @Test
     @Description("""
-    Verifies that a standard user with valid credentials can successfully log in and 
+    Verifies that a standard user with valid credentials can successfully log in and
     is automatically redirected to the main Products Inventory page.
     """)
     public void verifySuccessfulLoginRedirectsToInventory(){
@@ -23,7 +23,7 @@ public class LoginTest extends SwagLabsBase {
 
     @Test
     @Description("""
-            Data-driven negative test suite. 
+            Data-driven negative test suite.
             Verifies that the system securely intercepts invalid login attempts 
             (including locked-out accounts, bad credentials, and empty fields) 
             and correctly displays the expected error message without granting system access.
