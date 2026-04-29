@@ -1,23 +1,23 @@
 package com.swaglabs.base;
 
 import com.framework.core.BaseTest;
-import framework.pages.swagLabs.ProductsPage;
+import framework.pages.swagLabs.ProductsOverviewPage;
 import org.testng.annotations.BeforeMethod;
 
 public class SwagLabsBase extends BaseTest {
-    protected ProductsPage productsPage;
+    protected ProductsOverviewPage productsOverviewPage;
 
     @BeforeMethod(dependsOnMethods = "setup")
 
     public void navigate() {
         driver.get(getProperty("sauce_url"));
     }
-    public ProductsPage getProductsPage() {
-        return this.productsPage;
+    public ProductsOverviewPage getProductsOverviewPage() {
+        return this.productsOverviewPage;
     }
     // A common method to handle the repetitive login steps
     public void loginAsStandardUser() {
-        productsPage = loginPage.logInToTheAccount(
+        productsOverviewPage = loginPage.logInToTheAccount(
                 getProperty("standard_user"),
                 getProperty("common_password")
         );

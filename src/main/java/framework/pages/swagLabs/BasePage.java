@@ -2,11 +2,13 @@ package framework.pages.swagLabs;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
+import java.util.ArrayList;
+import java.util.List;
 
 public class BasePage {
     protected WebDriver driver;
@@ -28,5 +30,16 @@ public class BasePage {
 
     protected String getText(By locator) {
         return wait.until(ExpectedConditions.visibilityOfElementLocated(locator)).getText();
+    }
+
+    protected ArrayList<String> getTexts(By locator) {
+        ArrayList<String> textList = new ArrayList<>();
+
+        List<WebElement> elements = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(locator));
+
+        for (WebElement el : elements) {
+            textList.add(el.getText());
+        }
+        return textList;
     }
 }

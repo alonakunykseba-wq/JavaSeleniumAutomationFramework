@@ -23,10 +23,14 @@ public class DriverFactory {
             default:
 
                 ChromeOptions options = new ChromeOptions();
-                options.addArguments("--disable-features=PasswordLeakDetection");
-                options.addArguments("--disable-features=PasswordManagerOnboarding");
 
-                //for GitHub Actions Pipeline!
+                // 1. Disable the Password Manager
+                java.util.Map<String, Object> prefs = new java.util.HashMap<>();
+                prefs.put("credentials_enable_service", false);
+                prefs.put("profile.password_manager_enabled", false);
+                options.setExperimentalOption("prefs", prefs);
+                // 2. Incognito mode blocks all popups
+                options.addArguments("--incognito");
                 options.addArguments("--no-sandbox");
                 options.addArguments("--disable-dev-shm-usage");
                 options.addArguments("--headless=new");

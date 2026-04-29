@@ -1,4 +1,4 @@
-<suite name="Login Feature Suite">
+<suite name="SwagLabs Automation Suite">
     <listeners>
         <listener class-name="com.framework.core.TestListener" />
     </listeners>
@@ -50,4 +50,32 @@
             </class>
         </classes>
     </test>
+    <test name="TC-05: verifyProductCatalogCountAndBrandingConsistency">
+        <classes>
+            <class name="com.swaglabs.tests.CatalogTest">
+                <methods>
+                    <include name="verifyProductCatalogCountAndBrandingConsistency"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="TC-06: verifyHighToLowPriceSortingLogic">
+        <classes>
+            <class name="com.swaglabs.tests.CatalogTest">
+                <methods>
+                    <include name="verifyHighToLowPriceSortingLogic"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="TC-12: verifyProductDetailsMatchCatalogInformation">
+        <classes>
+            <class name="com.swaglabs.tests.CatalogTest">
+                <methods>
+                    <include name="verifyProductDetailsMatchCatalogInformation"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
 </suite>
+
