@@ -70,7 +70,7 @@ public class ProductsOverviewPage extends BasePage {
 
     public ProductsOverviewPage addProductsToTheCart(int amount) {
         for (int count = 0; count < amount; count++) {
-           click(addButtonSelector);
+            click(addButtonSelector);
         }
         return this;
     }
@@ -79,7 +79,7 @@ public class ProductsOverviewPage extends BasePage {
         return !driver.findElements(removeButtonSelector).isEmpty();
     }
 
-    public ProductsOverviewPage removeProduct(){
+    public ProductsOverviewPage removeProduct() {
         click(removeButtonSelector);
         return this;
     }
@@ -88,7 +88,7 @@ public class ProductsOverviewPage extends BasePage {
         return !driver.findElements(shoppingCartBadgeSelector).isEmpty();
     }
 
-    public int getProductsAmountInTheCart(){
+    public int getProductsAmountInTheCart() {
         wait.until(ExpectedConditions.visibilityOfElementLocated(shoppingCartBadgeSelector));
         return Integer.parseInt(getText(shoppingCartBadgeSelector));
     }
@@ -98,7 +98,7 @@ public class ProductsOverviewPage extends BasePage {
         return new ShoppingCartPage(driver).waitForPageLoad();
     }
 
-    public LoginPage submitLogout(){
+    public LoginPage submitLogout() {
         click(burgerButtonSelector);
         click(logoutButtonSelector);
         return new LoginPage(driver);

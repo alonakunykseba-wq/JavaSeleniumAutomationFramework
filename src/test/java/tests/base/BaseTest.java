@@ -34,7 +34,7 @@ public class BaseTest {
 
     @Parameters("browser")
     @BeforeMethod(alwaysRun = true)
-    public void setup(@Optional("chrome") String browserName) {
+    protected void setup(@Optional("chrome") String browserName) {
         driver = DriverFactory.getDriver(browserName);
         driver.manage().window().maximize();
         driver.get(getProperty("sauce_url"));
@@ -42,7 +42,7 @@ public class BaseTest {
     }
 
     @AfterMethod(alwaysRun = true)
-    public void tearDown() {
+    protected void tearDown() {
         if (driver != null) driver.quit();
     }
 }

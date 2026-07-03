@@ -24,7 +24,7 @@ public class BasePage {
     }
 
     protected void click(By locator) {
-       wait.until(ExpectedConditions.elementToBeClickable(locator)).click();
+        wait.until(ExpectedConditions.elementToBeClickable(locator)).click();
     }
 
     protected void enterText(By locator, String text) {

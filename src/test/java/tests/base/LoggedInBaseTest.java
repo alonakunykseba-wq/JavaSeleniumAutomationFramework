@@ -9,9 +9,8 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class LoggedInBaseTest extends BaseTest {
     protected SoftAssertions softly;
 
-
     @BeforeMethod(alwaysRun = true)
-    public void setupTestState() {
+    protected void setupTestState() {
         softly = new SoftAssertions();
         productsOverviewPage = loginAsStandardUser();
         assertThat(productsOverviewPage.getPageTitle())
@@ -20,7 +19,7 @@ public class LoggedInBaseTest extends BaseTest {
     }
 
     @AfterMethod(alwaysRun = true)
-    public void tearDownTestState() {
+    protected void tearDownTestState() {
         if (softly != null) {
             softly.assertAll();
         }

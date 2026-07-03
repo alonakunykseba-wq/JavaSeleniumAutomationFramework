@@ -24,7 +24,7 @@ public class CheckoutTest extends LoggedInBaseTest {
         return new Object[][]{
                 {new CheckoutData("", TEST_LAST_NAME, TEST_ZIP, "Error: First Name is required")},
                 {new CheckoutData(TEST_FIRST_NAME, "", TEST_ZIP, "Error: Last Name is required")},
-                {new CheckoutData (TEST_FIRST_NAME, TEST_LAST_NAME, "", "Error: Postal Code is required")}
+                {new CheckoutData(TEST_FIRST_NAME, TEST_LAST_NAME, "", "Error: Postal Code is required")}
         };
     }
 
@@ -55,13 +55,13 @@ public class CheckoutTest extends LoggedInBaseTest {
         softly.assertAll();
     }
 
-    @Test(groups = {"smoke"},description = "TC-10: shouldCompletePurchase_whenValidShippingDetailsAreProvided")
+    @Test(groups = {"smoke"}, description = "TC-10: shouldCompletePurchase_whenValidShippingDetailsAreProvided")
     @Description("""  
             Verifies the end-to-end Happy Path purchase flow.
             Ensures that a user can successfully add an item to the cart, provide valid checkout information,
             submit the final order, and receive the correct order confirmation message.
     """)
-    public void shouldCompletePurchase_whenValidShippingDetailsAreProvided(){
+    public void shouldCompletePurchase_whenValidShippingDetailsAreProvided() {
         int amount = 3;
         CheckoutCompletePage checkoutComplete = navigateToCheckoutForm(amount)
                 .fillTheForm(TEST_FIRST_NAME, TEST_LAST_NAME, TEST_ZIP)
@@ -100,12 +100,12 @@ public class CheckoutTest extends LoggedInBaseTest {
             the system successfully retains the state of the cart and restores all previously added items.
             """)
 
-    public void shouldPersistCartItems_whenUserLogsOutAndLogsBackIn(){
+    public void shouldPersistCartItems_whenUserLogsOutAndLogsBackIn() {
         productsOverviewPage.addProductsToTheCart(2);
-        List <String> expectedProductList = productsOverviewPage.navigateToTheCart().getProductNames();
+        List<String> expectedProductList = productsOverviewPage.navigateToTheCart().getProductNames();
         productsOverviewPage.submitLogout();
         loginAsStandardUser();
-        List <String> actualProductList = productsOverviewPage.navigateToTheCart().getProductNames();
+        List<String> actualProductList = productsOverviewPage.navigateToTheCart().getProductNames();
         assertThat(actualProductList)
                 .withFailMessage("The list of products in the shopping cart is not as expected one")
                 .containsExactlyInAnyOrderElementsOf(expectedProductList);
