@@ -6,12 +6,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 import java.util.Random;
 
-public class ProductsOverviewPage extends BasePage {
+public class ProductsOverviewPage extends BaseProductPage {
 
     private final By titleSelector = By.cssSelector(".title");
     private final By sortingDropdownSelector = By.className("product_sort_container");
@@ -30,7 +29,7 @@ public class ProductsOverviewPage extends BasePage {
         return getText(titleSelector);
     }
 
-    public ArrayList<String> getProductNames() {
+    public List<String> getProductNames() {
         return getTexts(productNameSelector);
     }
 
@@ -70,7 +69,7 @@ public class ProductsOverviewPage extends BasePage {
 
     public ProductsOverviewPage addProductsToTheCart(int amount) {
         for (int count = 0; count < amount; count++) {
-           click(addButtonSelector);
+            click(addButtonSelector);
         }
         return this;
     }
@@ -79,7 +78,7 @@ public class ProductsOverviewPage extends BasePage {
         return !driver.findElements(removeButtonSelector).isEmpty();
     }
 
-    public ProductsOverviewPage removeProduct(){
+    public ProductsOverviewPage removeProduct() {
         click(removeButtonSelector);
         return this;
     }
@@ -88,7 +87,7 @@ public class ProductsOverviewPage extends BasePage {
         return !driver.findElements(shoppingCartBadgeSelector).isEmpty();
     }
 
-    public int getProductsAmountInTheCart(){
+    public int getProductsAmountInTheCart() {
         wait.until(ExpectedConditions.visibilityOfElementLocated(shoppingCartBadgeSelector));
         return Integer.parseInt(getText(shoppingCartBadgeSelector));
     }
@@ -98,7 +97,7 @@ public class ProductsOverviewPage extends BasePage {
         return new ShoppingCartPage(driver).waitForPageLoad();
     }
 
-    public LoginPage submitLogout(){
+    public LoginPage submitLogout() {
         click(burgerButtonSelector);
         click(logoutButtonSelector);
         return new LoginPage(driver);

@@ -39,25 +39,25 @@ public class CatalogTest extends LoggedInBaseTest {
         softly.assertAll();
     }
 
-    @Test (groups ={"smoke"}, description ="TC-06: shouldSortProductsByPriceDescending_whenHighToLowFilterIsApplied")
+    @Test(groups = {"smoke"}, description = "TC-06: shouldSortProductsByPriceDescending_whenHighToLowFilterIsApplied")
     @Description("""
             Verifies that the catalog sorting mechanism successfully applies the 'Price (high to low)' filter,
                         and correctly rearranges all product prices on the page into strictly descending order.
             """)
-    public void shouldSortProductsByPriceDescending_whenHighToLowFilterIsApplied(){
+    public void shouldSortProductsByPriceDescending_whenHighToLowFilterIsApplied() {
         productsOverviewPage.applySortingFilter("Price (high to low)");
         assertThat(productsOverviewPage.getProductPrices())
                 .withFailMessage("The prices are not sorted in descending order")
                 .isSortedAccordingTo(Comparator.reverseOrder());
     }
 
-    @Test (description = "TC-13: shouldMatchCatalogInformation_whenProductDetailsAreOpened")
+    @Test(description = "TC-13: shouldMatchCatalogInformation_whenProductDetailsAreOpened")
     @Description("""
             Verifies data synchronization between the high-level catalog and individual item pages.
             Ensures that when a specific product is clicked,
             the resulting Product Details page displays the exact same product name and price as the catalog cache.
             """)
-    public void shouldMatchCatalogInformation_whenProductDetailsAreOpened(){
+    public void shouldMatchCatalogInformation_whenProductDetailsAreOpened() {
         String expectedName = productsOverviewPage.getRandomProductName();
         double expectedPrice = productsOverviewPage.getProductPriceByName(expectedName);
         ProductDetailsPage details = productsOverviewPage.clickRandomProductLink(expectedName);

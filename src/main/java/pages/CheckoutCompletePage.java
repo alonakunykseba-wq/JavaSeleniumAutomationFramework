@@ -12,11 +12,11 @@ public class CheckoutCompletePage extends BasePage {
     private final By completeHeaderSelector = By.cssSelector("h2[data-test='complete-header']");
     private final By completeTextSelector = By.cssSelector("div[data-test='complete-text']");
 
-    public String getCompleteOrderHeader(){
+    public String getCompleteOrderHeader() {
         return getText(completeHeaderSelector);
     }
 
-    public String getCompleteOrderText(){
+    public String getCompleteOrderText() {
         return getText(completeTextSelector);
     }
 }
