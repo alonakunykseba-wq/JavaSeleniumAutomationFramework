@@ -6,12 +6,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 import java.util.Random;
 
-public class ProductsOverviewPage extends BasePage {
+public class ProductsOverviewPage extends BaseProductPage {
 
     private final By titleSelector = By.cssSelector(".title");
     private final By sortingDropdownSelector = By.className("product_sort_container");
@@ -30,7 +29,7 @@ public class ProductsOverviewPage extends BasePage {
         return getText(titleSelector);
     }
 
-    public ArrayList<String> getProductNames() {
+    public List<String> getProductNames() {
         return getTexts(productNameSelector);
     }
 

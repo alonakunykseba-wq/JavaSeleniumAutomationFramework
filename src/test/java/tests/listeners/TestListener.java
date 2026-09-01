@@ -1,5 +1,6 @@
 package tests.listeners;
 
+import driver.DriverManager;
 import io.qameta.allure.Attachment;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -20,8 +21,7 @@ public class TestListener implements ITestListener {
     @Override
     public void onTestFailure(ITestResult result) {
 
-        Object testClass = result.getInstance();
-        WebDriver driver = ((BaseTest) testClass).getDriver();
+        WebDriver driver = DriverManager.getDriver();
         if (driver != null) {
             saveScreenshotPNG(driver);
         }

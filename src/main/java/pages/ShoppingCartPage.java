@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 
 import java.util.List;
 
-public class ShoppingCartPage extends BasePage {
+public class ShoppingCartPage extends BaseProductPage {
 
     private final By checkoutSelector = By.cssSelector("button[data-test='checkout']");
     private final By productNameSelector = By.cssSelector(".inventory_item_name");

@@ -1,5 +1,4 @@
 name: Selenium Automation Pipeline
-# This tells GitHub to run the tests every time you push to the 'main' branch
 on:
   push:
     branches: [ "main" ]
@@ -7,7 +6,7 @@ on:
     branches: [ "main" ]
 jobs:
   build-and-test:
-    runs-on: ubuntu-latest # GitHub gives you a free Linux server
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4

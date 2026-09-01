@@ -1,6 +1,7 @@
 package tests.base;
 
 import driver.DriverFactory;
+import driver.DriverManager;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import pages.LoginPage;
@@ -22,7 +23,7 @@ public class BaseTest {
     }
 
     public WebDriver getDriver() {
-        return driver;
+        return DriverManager.getDriver();
     }
 
     protected ProductsOverviewPage loginAsStandardUser() {
@@ -36,6 +37,7 @@ public class BaseTest {
     @BeforeMethod(alwaysRun = true)
     protected void setup(@Optional("chrome") String browserName) {
         driver = DriverFactory.getDriver(browserName);
+        DriverManager.setDriver(driver);
         driver.manage().window().maximize();
         driver.get(getProperty("sauce_url"));
         loginPage = new LoginPage(driver);
@@ -43,6 +45,6 @@ public class BaseTest {
 
     @AfterMethod(alwaysRun = true)
     protected void tearDown() {
-        if (driver != null) driver.quit();
+        DriverManager.quitDriver();
     }
 }

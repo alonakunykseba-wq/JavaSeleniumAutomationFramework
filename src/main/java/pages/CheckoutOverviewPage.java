@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 
 import java.util.List;
 
-public class CheckoutOverviewPage extends BasePage {
+public class CheckoutOverviewPage extends BaseProductPage {
     private final By itemTotalSelector = By.cssSelector("div[data-test='subtotal-label']");
     private final By taxPriceSelector = By.cssSelector("div[data-test='tax-label']");
     private final By totalSelector = By.cssSelector("div[data-test='total-label']");

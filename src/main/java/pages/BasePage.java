@@ -14,8 +14,6 @@ import java.util.List;
 public class BasePage {
     protected WebDriver driver;
     protected WebDriverWait wait;
-    protected final By productPriceSelector = By.cssSelector(".inventory_item_price");
-    protected final By productNameSelector = By.cssSelector(".inventory_item_name");
     protected final By contentsWrapperSelector = By.id("contents_wrapper");
 
     public BasePage(WebDriver driver) {
@@ -28,16 +26,17 @@ public class BasePage {
     }
 
     protected void enterText(By locator, String text) {
-        wait.until(ExpectedConditions.visibilityOfElementLocated(locator)).clear();
-        driver.findElement(locator).sendKeys(text);
+        WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+        element.clear();
+        element.sendKeys(text);
     }
 
     protected String getText(By locator) {
         return wait.until(ExpectedConditions.visibilityOfElementLocated(locator)).getText();
     }
 
-    protected ArrayList<String> getTexts(By locator) {
-        ArrayList<String> textList = new ArrayList<>();
+    protected List<String> getTexts(By locator) {
+        List<String> textList = new ArrayList<>();
 
         List<WebElement> elements = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(locator));
 
@@ -47,15 +46,9 @@ public class BasePage {
         return textList;
     }
 
-    public ArrayList<String> getProductPricesWithCurrency() {
-        return getTexts(productPriceSelector);
-    }
 
-    public List<Double> getProductPrices() {
-        return getProductPricesWithCurrency().stream()
-                .map(price -> Double.parseDouble(price.replace("$", "")))
-                .toList();
-    }
+
+
 
     @SuppressWarnings("unchecked")
     public <T extends BasePage> T waitForPageLoad() {
